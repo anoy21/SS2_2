@@ -1,0 +1,59 @@
+body {
+ background-color: #73A9AD
+}
+
+::placeholder{
+    color: #73A9AD;
+    opacity: 0.7;
+    transition: 0.1s;
+}
+
+::placeholder:hover{
+    color: #B3C890;
+    transition: 0.1s;
+}
+
+#bar {
+    width: 500px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    background-color: beige;
+    transition: 0.1s;
+    color: #73A9AD;
+    
+}
+
+#bar:hover{
+    border: 2px solid #B3C890;
+    transition: 0.1s;
+    color: #B3C890;
+}
+
+.search {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#button {
+    height: 37px;
+    outline: none;
+    background-color: beige;
+    border: none;
+    transition: 0.1s;
+    width: 50px;
+    color: #73A9AD;
+
+}
+
+
+#button:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: #B3C890;
+    border: 2px solid #B3C890;
+}
+
