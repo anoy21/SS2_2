@@ -1,0 +1,142 @@
+body {
+ background-color: #73A9AD
+}
+
+::placeholder{
+    color: #73A9AD;
+    opacity: 0.7;
+    transition: 0.1s;
+}
+
+::placeholder:hover{
+    color: #B3C890;
+    transition: 0.1s;
+}
+
+#search-input {
+    width: 500px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    background-color: beige;
+    transition: 0.1s;
+    color: #73A9AD;
+    
+}
+
+#search-input:hover{
+    border: 2px solid #B3C890;
+    transition: 0.1s;
+    color: #B3C890;
+}
+
+.search {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#search {
+    height: 37px;
+    outline: none;
+    background-color: beige;
+    border: none;
+    transition: 0.1s;
+    width: 50px;
+    color: #73A9AD;
+
+}
+
+
+#search:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: #B3C890;
+    border: 2px solid #B3C890;
+}
+
+.wrap{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  #products {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto; /* 3 cột  kích thước auto*/
+    grid-column-gap: 2em;/* khoảng cách giữa các cột */
+    grid-row-gap: 4em;
+    padding: 8em 0;
+  }
+
+  .card {
+    background-color: #FBFFDC;
+    max-width: 18em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+    transition: 0.1s;
+  }
+  
+
+  .card:hover{
+    transition: 0.1s;
+    transform: scale(1.05);
+  }
+
+
+
+  .image-container {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    object-fit: contain;/* ảnh sẽ được hiển thị theo tỉ lệ */
+    height: 15em;
+  }
+  
+  .container {
+    padding-top: 1em;
+    color: #110f29;
+  }
+  
+  .container h5 {
+    font-weight: 500;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+h5 {
+    color: #98EECC;
+    text-align: center;
+    font-size: 20px;
+}
+
+h6 {
+    color: #98EECC;
+    text-align: center;
+    font-size: 15px;
+}
+
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      height: 10em;
+    }
+    body{
+      background-color: #110f29;
+    }
+    
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
